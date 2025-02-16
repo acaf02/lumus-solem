@@ -1,2 +1,2 @@
 # lumus-solem
-This repository contains the source code for the lumus solem e-commerce.
+This repository contains the frontend source code for the lumus solem e-commerce.
