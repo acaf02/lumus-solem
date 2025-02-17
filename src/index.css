@@ -1,3 +1,14 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-custom-pink {
+    background-color: #EB4C6A;
+  }
+  .text-custom-pink {
+    color: #EB4C6A;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
