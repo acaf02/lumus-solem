@@ -19,6 +19,10 @@
   .border-custom-yellow {
     color: #f5cb66
   }
+  .bg-custom-bg{
+    background-color: #f8ecbc;
+  }
+
 }
 
 
@@ -81,7 +85,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f8ecbc;
   }
   a:hover {
     color: #747bff;
