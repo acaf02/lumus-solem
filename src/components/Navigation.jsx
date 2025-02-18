@@ -31,6 +31,15 @@ const Navigation = () => {
         <a href="/">
           <li className="text-white cursor-pointer">Home</li>
         </a>
+        <a href="/product">
+          <li className="text-white cursor-pointer">Produtos</li>
+        </a>
+        <a href="/colletion">
+          <li className="text-white cursor-pointer">Coleções</li>
+        </a>
+        <a href="/care">
+          <li className="text-white cursor-pointer">Cuidados</li>
+        </a>
         <a href="/about">
           <li className="text-white cursor-pointer">
             Sobre
