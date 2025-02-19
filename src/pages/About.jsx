@@ -3,10 +3,14 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 import MVV from "../components/MVV";
+import Title from "../components/Title";
 
 const About = () => {
   return (
     <div className="my-10 flex flex-col text-justify">
+      <div className="justify-center flex pb-5">
+      <Title text1={"SOBRE"} text2={"NÓS"} />
+      </div>
       <div className="flex flex-row h-[500px]"> 
         {/* Imagem */}
         <div className="relative flex-1">
