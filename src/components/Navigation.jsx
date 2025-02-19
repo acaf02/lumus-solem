@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { assets } from "../assets/assets";
 
 const Navigation = () => {
   const { scrollY } = useScroll();
@@ -22,8 +23,8 @@ const Navigation = () => {
       className="fixed top-0 left-0 w-full flex items-center px-8 transition-all duration-300 z-1"
     >
       {/* Logo */}
-      <div id="logo" className="text-white text-2xl font-bold">
-        Lumus Solem
+      <div id="logo">
+        <img src={assets.logo}  className="w-12 h-12"/>
       </div>
 
       {/* Menu */}
