@@ -7,6 +7,7 @@ import gmail from "./gmail.png"
 import instagram from "./instagram.png"
 import whatsapp from "./whatsapp.png"
 import logo from "./logo.png"
+import lumos from "./Lumos_Solem.webp"
 
 export const assets = {
 contact,
@@ -17,5 +18,6 @@ about,
 gmail,
 instagram,
 whatsapp,
-logo
+logo,
+lumos
 }
