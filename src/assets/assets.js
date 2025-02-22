@@ -11,6 +11,12 @@ import lumos from "./Lumos_Solem.webp"
 import tips from "./tips.png"
 import youknow from "./youknow.jpeg"
 import making from "./making.png"
+import about1 from "./about1.jpeg"
+import about2 from "./about2.jpeg"
+import about3 from "./about3.jpeg"
+import about4 from "./about4.gif"
+import ourcandle from "./ourcandle.jpg"
+import hero from "./hero.jpg"
 
 export const assets = {
 contact,
@@ -25,5 +31,11 @@ logo,
 lumos,
 tips,
 youknow,
-making
+making,
+about1,
+about2,
+about3,
+about4,
+ourcandle,
+hero
 }
