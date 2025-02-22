@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-import "./App.css";
+import "./index.css"
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Product from "./pages/Product";
 import Collection from "./pages/Collection";
-import Care from "./pages/Care";
+import Care from "./pages/OurCandles";
 import Footer from "./components/Footer";
 
 function App() {
