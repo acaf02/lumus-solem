@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-import "./index.css"
+import "./index.css";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
@@ -11,9 +11,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full">
-      <Navigation />
-      <Router>
+    <Router>
+      <div className="w-full">
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -22,9 +22,9 @@ function App() {
           <Route path="/ourCandles" element={<OurCandles />} />
           <Route path="/collection" element={<Collection />} />
         </Routes>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
