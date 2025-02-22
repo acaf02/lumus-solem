@@ -1,85 +1,64 @@
-import React from "react";
-import { MdArrowRightAlt } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
+import Hero from "../components/Hero";
 import MVV from "../components/MVV";
 import Title from "../components/Title";
 
-const About = () => {
+export default function AboutUs() {
   return (
-    <div className="my-10 flex flex-col text-justify px-4 sm:px-[5vw] md:px-[7vw] lg:px-[5vw]">
-      {/* Título */}
-      <div className="flex justify-center pb-5">
-        <Title text1="SOBRE" text2="NÓS" />
+    <div className="min-h-screen">
+
+      <Hero />
+
+      {/* About Section */}
+      <section className="text-center py-16 px-10">
+      <Title text1="SOBRE" text2="NÓS" />
+        <p className="text-gray-600 max-w-xl mx-auto">
+          A Lumus Solem nasceu da paixão por velas artesanais que iluminam e transformam qualquer ambiente.
+        </p>
+      </section>
+
+      {/* Images Section */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-10">
+        <img src={assets.about1} alt="candle" className="rounded-lg md:h-68" />
+        <img src={assets.about2} alt="candle" className="rounded-lg md:h-68" />
+        <img src={assets.about4} alt="candlegif" className="rounded-lg md:h-68" />
+        <img src={assets.about3} alt="candle" className="rounded-lg md:h-68" />
       </div>
 
-      <div className="flex flex-row py-6">
-        <div className="flex-1 flex flex-col justify-center rounded-tl-lg rounded-bl-lg bg-custom-yellow px-7 shadow-lg">
-          <div className="text-gray-800">
-            <b>Bem-vindo à Lumus Solem!</b>
-            <p className="py-4">
-              Lumus Solem foi primeiramente visto (e usado) em{" "}
-              <i>Harry Potter e a Pedra Filosofal</i>, pela personagem Hermione
-              Granger para escapar de um perigo em uma grande escuridão. O
-              feitiço em si é usado para criar um feixe de luz muito brilhante,
-              que pode ser mais quente que a luz comum.
-            </p>
-            <p className="pb-4">
-              A ideia do nome surge pela forte ligação da empreendedora com a
-              série e pela idealização de que as velas produzidas possam
-              iluminar cada casa, afastando as sombras e acalentando o ambiente.
-            </p>
-          </div>
-        </div>
-        <img src={assets.lumos} className="w-1/2 h-1/2 rounded-tr-lg rounded-br-lg" />
-      </div>
-      <div className="flex flex-row">
-        {/* Imagem */}
-        <div className="relative flex-1">
-          <img
-            className="w-[580px] h-[440px] object-cover rounded-bl-lg rounded-tl-lg shadow-lg"
-            src={assets.about}
-            alt="Sobre nós"
-          />
-        </div>
+      {/* about us section */}
+      <section className="pt-16 px-10">
+        <h2 className="text-3xl font-bold text-center"> Na Lumus Solem, acreditamos que cada chama carrega consigo um
+          toque de aconchego e harmonia. Nossas velas são cuidadosamente
+          feitas à mão, combinando cera vegetal de alta qualidade e
+          fragrâncias envolventes para proporcionar uma experiência
+          sensorial única e sustentável.</h2>
+        <p className="text-gray-600 text-center w-2/2 mx-auto mt-4">
+          Mais do que iluminar ambientes, nossas criações transformam
+          espaços em verdadeiros refúgios de bem-estar, trazendo serenidade,
+          conforto e um toque especial à sua rotina. Cada vela é
+          desenvolvida com amor e dedicação, refletindo nosso compromisso
+          com a qualidade, o design e a sustentabilidade.
+        </p>
+      </section>
 
-        {/* Texto */}
-        <div className="flex-1 flex flex-col justify-center rounded-br-lg rounded-tr-lg bg-custom-yellow px-7 shadow-lg">
-          <div className="text-gray-800">
-            <p className="pb-4">
-              Na Lumus Solem, acreditamos que cada chama carrega consigo um
-              toque de aconchego e harmonia. Nossas velas são cuidadosamente
-              feitas à mão, combinando cera vegetal de alta qualidade e
-              fragrâncias envolventes para proporcionar uma experiência
-              sensorial única e sustentável.
-            </p>
-            <p className="pb-4">
-              Mais do que iluminar ambientes, nossas criações transformam
-              espaços em verdadeiros refúgios de bem-estar, trazendo serenidade,
-              conforto e um toque especial à sua rotina. Cada vela é
-              desenvolvida com amor e dedicação, refletindo nosso compromisso
-              com a qualidade, o design e a sustentabilidade.
-            </p>
-            <p>
-              Descubra a magia das velas Lumus Solem e permita-se viver momentos
-              de pura tranquilidade.
-            </p>
-          </div>
-
-          {/* Botão de contato */}
-          <Link className="cursor-pointer" to="/contact">
-            <div className="flex flex-row items-center text-gray-800 pt-4">
-              <b className="text-sm">ENTRE EM CONTATO</b>
-              <MdArrowRightAlt className="w-8 h-5 ml-2" />
-            </div>
-          </Link>
+      {/* meaning of the name */}
+      <section className="py-16 px-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <img src={assets.lumos} alt="hp" className="rounded-lg lg:w-[45vw] w-full" />
+        <div>
+          <h3 className="text-2xl font-bold">Significado de Lumus Solem</h3>
+          <p className="text-gray-600 mt-4">
+            O nome Lumus Solem tem origem na série{" "}<i>Harry Potter</i>, onde a personagem Hermione Granger utiliza o feitiço Lumus Solem em{" "}
+            <i>Harry Potter e a Pedra Filosofal</i> para escapar de um perigo em meio à escuridão. Esse feitiço cria um feixe de luz intenso e quente, iluminando o caminho mesmo nas situações mais sombrias. Essa simbologia reflete a essência da nossa marca: trazer luz, aconchego e um toque mágico ao dia a dia das pessoas.
+          </p>
+          <p className="text-gray-600 mt-4">
+            A ideia do nome surge pela forte ligação da empreendedora com a
+            série e pela idealização de que as velas produzidas possam
+            iluminar cada casa, afastando as sombras e acalentando o ambiente.
+          </p>
         </div>
-      </div>
+      </section>
 
-      {/* Seção de Missão, Visão e Valores */}
       <MVV />
     </div>
   );
-};
-
-export default About;
+}
