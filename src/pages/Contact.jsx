@@ -1,11 +1,13 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import Title from "../components/Title";
+import Hero from "../components/Hero";
 
 const Contact = () => {
   return (
     <div>
-    <div className="flex flex-col gap-16 md:flex-row items-center justify-center min-h-screen md:px-20 ">
+      <Hero />
+    <div className="flex flex-col py-16 gap-16 md:flex-row items-center justify-center min-h-screen md:px-20 ">
       {/* Texto */}
       <div className="w-1/2 text-center md:text-left">
       <div className="pb-3">
@@ -70,7 +72,7 @@ const Contact = () => {
       </div>
     </div>
     <div className="justify-center md:px-20 pt-10">
-      <div className="flex flex-row gap-4 w-full items-center gap-12">
+      <div className="flex flex-row gap-4 w-full items-center gap-28">
         <div className="bg-custom-yellow rounded-lg p-4 w-80 h-48 flex flex-col items-center text-center pt-7 shadow-md">
           <img src={assets.gmail} className="w-16 h-16" />
           <p className="pt-9">Lumussolemvelas@gmail.com</p>
