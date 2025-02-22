@@ -7,7 +7,7 @@ import Title from "../components/Title";
 
 const About = () => {
   return (
-    <div className="my-10 flex flex-col text-justify">
+    <div className="my-10 flex flex-col text-justify px-4 sm:px-[5vw] md:px-[7vw] lg:px-[5vw]">
       {/* Título */}
       <div className="flex justify-center pb-5">
         <Title text1="SOBRE" text2="NÓS" />
@@ -37,14 +37,14 @@ const About = () => {
         {/* Imagem */}
         <div className="relative flex-1">
           <img
-            className="w-[580px] h-[460px] object-cover rounded-bl-lg rounded-tl-lg shadow-lg"
+            className="w-[580px] h-[440px] object-cover rounded-bl-lg rounded-tl-lg shadow-lg"
             src={assets.about}
             alt="Sobre nós"
           />
         </div>
 
         {/* Texto */}
-        <div className="flex-1 flex flex-col text-lg justify-center rounded-br-lg rounded-tr-lg bg-custom-yellow px-7 shadow-lg">
+        <div className="flex-1 flex flex-col justify-center rounded-br-lg rounded-tr-lg bg-custom-yellow px-7 shadow-lg">
           <div className="text-gray-800">
             <p className="pb-4">
               Na Lumus Solem, acreditamos que cada chama carrega consigo um
