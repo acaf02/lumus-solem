@@ -73,7 +73,7 @@ const Contact = () => {
       <div className="flex flex-row gap-4 w-full items-center gap-12">
         <div className="bg-custom-yellow rounded-lg p-4 w-80 h-48 flex flex-col items-center text-center pt-7 shadow-md">
           <img src={assets.gmail} className="w-16 h-16" />
-          <p className="pt-9">Email: contato@empresa.com</p>
+          <p className="pt-9">Lumussolemvelas@gmail.com</p>
         </div>
         <div className="bg-custom-yellow rounded-lg w-80 h-48 text-center shadow-md flex flex-col items-center pt-9">
           <img src={assets.whatsapp} className="w-13 h-13"/>
@@ -81,7 +81,10 @@ const Contact = () => {
         </div>
         <div className="bg-custom-yellow rounded-lg p-4 w-80 h-48 text-center shadow-md flex flex-col items-center pt-9">
           <img src={assets.instagram} className="w-13 h-13" />
-          <p className="pt-9">@empresa</p>
+          <a href="https://www.instagram.com/lumusvelasartes/">
+          <p className="pt-9">@lumusvelasartes</p>
+          </a>
+          
         </div>
       </div>
       </div>
