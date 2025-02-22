@@ -35,11 +35,11 @@ const Navigation = () => {
         <a href="/product">
           <li className="text-white cursor-pointer">Produtos</li>
         </a>
-        <a href="/colletion">
+        <a href="/collection">
           <li className="text-white cursor-pointer">Coleções</li>
         </a>
-        <a href="/care">
-          <li className="text-white cursor-pointer">Cuidados</li>
+        <a href="/ourCandles">
+          <li className="text-white cursor-pointer">Nossas Velas</li>
         </a>
         <a href="/about">
           <li className="text-white cursor-pointer">
