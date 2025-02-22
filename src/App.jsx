@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Product from "./pages/Product";
 import Collection from "./pages/Collection";
-import Care from "./pages/OurCandles";
+import OurCandles from "./pages/OurCandles";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
-          <Route path="/care" element={<Care />} />
+          <Route path="/ourCandles" element={<OurCandles />} />
           <Route path="/collection" element={<Collection />} />
         </Routes>
       </Router>
