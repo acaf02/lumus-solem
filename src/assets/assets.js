@@ -8,6 +8,9 @@ import instagram from "./instagram.png"
 import whatsapp from "./whatsapp.png"
 import logo from "./logo.png"
 import lumos from "./Lumos_Solem.webp"
+import tips from "./tips.png"
+import youknow from "./youknow.jpeg"
+import making from "./making.png"
 
 export const assets = {
 contact,
@@ -19,5 +22,8 @@ gmail,
 instagram,
 whatsapp,
 logo,
-lumos
+lumos,
+tips,
+youknow,
+making
 }
