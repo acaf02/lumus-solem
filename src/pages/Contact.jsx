@@ -9,7 +9,7 @@ const Contact = () => {
       <Hero />
     <div className="flex flex-col py-16 gap-16 md:flex-row items-center justify-center min-h-screen md:px-20 ">
       {/* Texto */}
-      <div className="w-1/2 text-center md:text-left">
+      <div className="w-fit md:w-1/2 text-center md:text-left">
       <div className="pb-3">
         <Title text1="CONTATE" text2="-NOS" />
       </div>
@@ -26,33 +26,33 @@ const Contact = () => {
           </label>
 
           <label className="flex flex-col pt-2 pr-9">
-            <span className="pb-1">E-mail</span>
+            <span className="pb-1">E-mail:</span>
             <input
               type="email"
               name="email"
-              placeholder="Digite o seu email:"
+              placeholder="Digite o seu email"
               className="w-full h-12 border border-gray-300 rounded pl-3 bg-gray-100"
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
 
           <label className="flex flex-col pt-2 pr-9">
-            <span className="pb-1">Assunto</span>
+            <span className="pb-1">Assunto:</span>
             <input
               type="text"
               name="text"
-              placeholder="Digite o assunto:"
+              placeholder="Digite o assunto"
               onChange={(e) => setEmail(e.target.value)}
               className="w-full h-12 border border-gray-300 rounded pl-3 bg-gray-100"
             />
           </label>
 
           <label className="flex flex-col pt-2 pb-5 pr-9">
-            <span className="pb-1">Mensagem</span>
+            <span className="pb-1">Mensagem:</span>
             <textarea
               type="text"
               name="text"
-              placeholder="Digite a mensagem:"
+              placeholder="Digite a mensagem"
               onChange={(e) => setEmail(e.target.value)}
               className="w-full h-12 border border-gray-300 rounded pl-3 h-28 pt-2 bg-gray-100"
             />
@@ -72,7 +72,7 @@ const Contact = () => {
       </div>
     </div>
     <div className="justify-center md:px-20 pt-10">
-      <div className="flex flex-row gap-4 w-full items-center gap-28">
+      <div className="flex flex-col md:flex-row gap-4 w-full items-center gap-28">
         <div className="bg-custom-yellow rounded-lg p-4 w-80 h-48 flex flex-col items-center text-center pt-7 shadow-md">
           <img src={assets.gmail} className="w-16 h-16" />
           <p className="pt-9">Lumussolemvelas@gmail.com</p>
@@ -82,7 +82,7 @@ const Contact = () => {
           <p className="pt-9">Telefone: (11) 99999-9999</p>
         </div>
         <div className="bg-custom-yellow rounded-lg p-4 w-80 h-48 text-center shadow-md flex flex-col items-center pt-9">
-          <img src={assets.instagram} className="w-13 h-13" />
+          <img src={assets.instagram} className="w-13 h-13 " />
           <a href="https://www.instagram.com/lumusvelasartes/">
           <p className="pt-9">@lumusvelasartes</p>
           </a>
