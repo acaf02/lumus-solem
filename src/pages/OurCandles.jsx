@@ -17,7 +17,7 @@ export default function AboutPage() {
       </section>
 
       {/* Sections */}
-      <div className="px-12 space-y-16 pb-12">
+      <div className="px-14 space-y-16 pb-12">
         {/* Seção 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           <img
