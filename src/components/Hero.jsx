@@ -6,18 +6,21 @@ import { FaArrowDownLong } from "react-icons/fa6";
 const Hero = () => {
   const location = useLocation();
 
-  // Define frases para cada rota
-  const heroTexts = {
-    "/": "Bem-vindo à nossa loja de velas aromáticas!",
-    "/shop": "Explore nossa coleção exclusiva de velas.",
-    "/about": "Conheça nossa história e nossos valores.",
-    "/contact": "Entre em contato conosco para mais informações.",
-    "/ourCandles" : "Descubra como nossa velas são feitas e mais!",
-    "/collection": "Descubra as coleções que fazem parte da Lumus Solem!",
-    "/product": "Descubra nossos produtos incríveis!"
+  // Função para retornar a frase correta com base no pathname
+  const getHeroText = (pathname) => {
+    if (pathname === "/") return "Bem-vindo à nossa loja de velas aromáticas!";
+    if (pathname === "/shop") return "Explore nossa coleção exclusiva de velas.";
+    if (pathname === "/about") return "Conheça nossa história e nossos valores.";
+    if (pathname === "/contact") return "Entre em contato conosco para mais informações.";
+    if (pathname === "/ourCandles") return "Descubra como nossas velas são feitas e mais!";
+    if (pathname === "/collection") return "Descubra as coleções que fazem parte da Lumus Solem!";
+    if (pathname.startsWith("/product/")) return "Saiba mais sobre esse produto!";
+    if (pathname === "/product") return "Descubra nossos produtos incríveis!";
+    if (pathname.startsWith("/collection/")) return "Saiba mais sobre essa coleção!";
+    return "Descubra nossos produtos incríveis!";
   };
 
-  const currentText = heroTexts[location.pathname] || "Descubra nossos produtos incríveis!";
+  const currentText = getHeroText(location.pathname);
 
   return (
     <div id="content" className="relative w-full h-screen flex justify-center items-center text-center text-white">
