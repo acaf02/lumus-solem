@@ -12,12 +12,11 @@ const Product = () => {
   return (
     <div>
       <Hero />
-
       <div className='flex justify-center pt-8'>
         <Title text2="PRODUTOS" />
       </div>
 
-      <div className="px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
         {products.map((product) => (
           <ProductCard
             key={product._id}
