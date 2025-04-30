@@ -8,6 +8,8 @@ import Product from "./pages/Product";
 import Collection from "./pages/Collection";
 import OurCandles from "./pages/OurCandles";
 import Footer from "./components/Footer";
+import ProductInfo from "./pages/ProductInfo";
+import CollectionInfo from "./pages/CollectionsInfo";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/ourCandles" element={<OurCandles />} />
         <Route path="/collection" element={<Collection />} />
+        <Route path="/product/:productId" element={<ProductInfo />} />
+        <Route path="/collection/:collectionId" element={<CollectionInfo />} />
       </Routes>
       <Footer />
     </div>
