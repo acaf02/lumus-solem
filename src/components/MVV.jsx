@@ -22,7 +22,7 @@ const MVV = () => {
   ];
 
   return (
-    <div className="py-16">
+    <div className="pb-16">
       {/* Título */}
       <div className="flex justify-center mb-12">
         <Title text1="MISSÃO, VISÃO" text2="E VALORES" />
