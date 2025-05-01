@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Lumus Solem
 
 ## 🛠️ Sobre o Projeto
 
