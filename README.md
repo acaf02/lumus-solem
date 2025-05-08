@@ -41,8 +41,8 @@ Certifique-se de que você tem os seguintes itens instalados no seu ambiente:
 ### 🔧 Instalação no macOS/Linux
 
 ```bash
-git clone https://github.com/acaf02/lumus-solem-frontend.git
-cd projeto
+git clone https://github.com/acaf02/lumus-solem.git
+cd lumus-solem
 yarn install
 
 ```
@@ -50,8 +50,8 @@ yarn install
 ### 💻 Instalação no Windows
 
 ```bash
-git clone https://github.com/acaf02/lumus-solem-frontend.git
-cd projeto
+git clone https://github.com/acaf02/lumus-solem.git
+cd lumus-solem
 npm install
 
 ```
